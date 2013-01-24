@@ -1,0 +1,343 @@
+/*
+Theme Name: USC Games Theme v1.0
+Theme URI: http://games.usc.edu
+Author: Jeffrey Chamberlain
+Author URI: http://www.jeffchamberlain.com
+Description: Limited theme designed to update only games.usc.edu
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: none
+*/
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	height:100%;
+}
+body {
+	background-color:#000;
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+@font-face {
+	font-family:'linkfont';
+	src:url(fonts/ACaslonPro-Regular.eot); /* IE */  
+  	src:local("Adobe Caslon Pro"), url(fonts/ACaslonPro-Regular.ttf ) 		         
+  	format("truetype"); /* non-IE */  
+}
+@font-face {
+	font-family: 'footerfont';
+	src:url(fonts/National-Medium.eot); /* IE */  
+  	src:local("National Medium"), url(fonts/National-Medium.ttf ) 		           			        
+  	format("truetype"); /* non-IE */  
+}
+@font-face {
+	font-family: 'bodyfont';
+	src:url(fonts/National-Book.eot); /* IE */  
+  	src:local("National Book"), url(fonts/National-Book.ttf ) 		           			        
+  	format("truetype"); /* non-IE */  
+}
+@font-face {
+	font-family: 'headerfont';
+	src:url(fonts/OCRAStd.eot); /* IE */  
+  	src:local("OCR A Std"), url(fonts/OCRAStd.ttf ) 		           			        
+  	format("truetype"); /* non-IE */  
+}
+#wrapper {
+	position:relative;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:100%;
+}
+#background {
+	position:absolute;
+	bottom:0px;
+	top:89px;
+	width:980px;
+	background-image:url(images/background.jpg);
+	height:auto;
+	z-index:-100;
+}
+#navbar {
+	width:980px;
+	height:89px;
+	background-color:#991b1e;
+	line-height:32px;
+}
+#navbar a {
+	text-align:center;
+	font-family:'linkfont';
+	text-decoration:none;
+}
+#navbar a:link, #navbar a:visited {
+	color:#ffc423;
+}
+#navbar a:hover, #navbar a:active {
+	color:#FFF;
+}
+#navbar .games_logo {
+	background-image:url(images/games_logo.png);
+	position:absolute;
+	left:0px;
+	top:13px;
+	width:326px;
+	height:76px;
+}
+#navbar .usc_logo {
+	background-image:url(images/usc_logo.png);
+	position:absolute;
+	left:782px;
+	top:7px;
+	width:190px;
+	height:50px;
+}
+#navbar .about {
+	position:absolute;
+	left:380px;
+	top:57px;
+	width:60px;
+	height:32px;
+}
+#navbar .news {
+	position:absolute;
+	left:458px;
+	top:57px;
+	width:60px;
+	height:32px;
+}
+#navbar .events {
+	position:absolute;
+	left:542px;
+	top:57px;
+	width:54px;
+	height:32px;
+}
+#navbar .faculty {
+	position:absolute;
+	left:623px;
+	top:57px;
+	width:60px;
+	height:32px;
+}
+#navbar .games {
+	position:absolute;
+	left:713px;
+	top:57px;
+	width:55px;
+	height:32px;
+}
+#mainslider {
+	position:absolute;
+	background-image:url(images/slider_bg.png);
+	left:416px;
+	top:250px;
+	width:513px;
+	height:411px;
+}
+#newsslideshow {
+	position:relative;
+	background-image:url(images/news_sliderbg.png);
+	left:325px;
+	top:-20px;
+	width:483px;
+	height:358px;
+}
+#facultyfeatured {
+	top:0px;
+	right:38px;
+	width:218px;
+	height:260px;
+	position:absolute;
+	background-image:url(images/faculty_background.png);
+}
+#successstories {
+	top:800px;
+	left:40px;
+	width:218px;
+	height:260px;
+	position:absolute;
+}
+#content {
+	padding-bottom:166px;
+	font-family:'bodyfont';
+	font-size:15px;
+	color:#FFF;
+}
+#content .header {
+	font-family:'headerfont';
+	font-size:150%;
+	color:#ffcc00;
+}
+#content a {
+	text-decoration:none;
+}
+#content a:link, #content a:visited {
+	color:#00ba12;
+}
+#content a:hover, #content a:active {
+	color:#FFF;
+}
+#content .textbox {
+	position:relative;
+	height:auto;
+	border-radius:10px;
+	box-shadow:0px 0px 5px 4px #084541;
+	padding:5px;
+	background-color:rgba(0,0,0,.5);
+}
+.textbox .content {
+	width:auto;
+	height:auto;
+	word-wrap: break-word;
+	padding:18px;
+}
+.textbox p {
+	margin:0px;
+}
+#content .thirdbox {
+	float:left;
+	display:block;
+	width:260px;
+	margin-right:37px;
+}
+#numberoneimage {
+	position:absolute;
+	left:439px;
+	top:110px;
+	width:443px;
+	height:146px;
+	background-image:url(images/numberonetext.png);
+}
+#footer {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:980px;
+	height:166px;
+	font-family:'footerfont';
+	font-size:15px;
+	color:#FFF;
+	word-wrap: break-word;
+}
+#footer a {
+	text-decoration:none;
+}
+#footer a:link, #footer a:visited {
+	color:#ffcc00;
+}
+#footer a:hover, #footer a:active {
+	color:#FFF;
+}
+#footer .followtext {
+	position:absolute;
+	left:90px;
+	top:18px;   /*1567px;*/
+	width:258px;
+	height:34px;
+	line-height:34px;
+	
+}
+#footer .scalogo {
+	position:absolute;
+	left:90px;
+	top:52px;
+	width:258px;
+	height:41px;
+}
+#footer .scafacebook {
+	position:absolute;
+	left:139px;
+	top:99px;
+	width:42px;
+	height:42px;
+}
+#footer .scatwitter {
+	position:absolute;
+	left:199px;
+	top:99px;
+	width:40px;
+	height:42px;
+}
+#footer .scayoutube {
+	position:absolute;
+	left:255px;
+	top:99px;
+	width:43px;
+	height:42px;
+}
+#footer .vitlogo {
+	position:absolute;
+	left:402px;
+	top:52px;
+	width:258px;
+	height:41px;
+}
+#footer .vitfacebook {
+	position:absolute;
+	left:402px;
+	top:99px;
+	width:42px;
+	height:42px;
+}
+#footer .vittwitter {
+	position:absolute;
+	left:462px;
+	top:99px;
+	width:40px;
+	height:42px;
+}
+#footer .vityoutube {
+	position:absolute;
+	left:518px;
+	top:99px;
+	width:43px;
+	height:42px;
+}
+#footer .legaltext {
+	position:absolute;
+	font-size:12px;
+	left:631px;
+	top:93px;
+	width:220px;
+	height:29px;
+}
+#footer span {
+	color:#ffcc00;
+}
+.featureSlider .nivoSlider {
+    position:relative;
+    width:453px; /* Change this to your images width */
+    height:351px; /* Change this to your images height */
+    background:url(images/slider1.png) no-repeat 50% 50%;
+}
+.newsSlider .nivoSlider {
+    position:relative;
+    width:472px; /* Change this to your images width */
+    height:351px; /* Change this to your images height */
+    background:url(images/news_slider1.png) no-repeat 50% 50%;
+}
+.facultySlider .nivoSlider {
+    position:relative;
+    width:206px; /* Change this to your images width */
+    height:250px; /* Change this to your images height */
+    background:url(images/fac_slider1.png) no-repeat 50% 50%;
+}
+.aboutSlider .nivoSlider {
+    position:relative;
+    width:206px; /* Change this to your images width */
+    height:250px; /* Change this to your images height */
+    background:url(images/suc_slider1.png) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
