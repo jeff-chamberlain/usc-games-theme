@@ -1,33 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>
-<!-- InstanceBeginEditable name="Head" -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>USC Games - About</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<link rel="stylesheet" href="about-slider.css" type="text/css" media="screen" />
-<!--Scripts-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-<script src="scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-<!-- InstanceEndEditable -->
-<link rel="icon" href="http://www.usc.edu/favicon.ico">
-</head>
-<body>
-	<div id="wrapper">
-      <div id="navbar">
-        	<a href="index.html"><span class="games_logo"></span></a>
-            <a href="http://www.usc.edu/" target="_blank"><span class="usc_logo"></span></a>
-            <a href="about.html"><span class="about">about</span></a>
-            <a href="news.html"><span class="news">news</span></a> 
-            <a href="events.html"><span class="events">events</span></a> 
-            <a href="faculty.html"><span class="faculty">faculty</span></a> 
-            <a href="games.html"><span class="games">games</span></a> 
-        </div>
-    	<div id="background">
-        </div>
-        <div id="content">
-		<!-- InstanceBeginEditable name="Content" -->
-        <script type="text/javascript">
+<?php
+/* Template Name: USC Games About Page */  
+get_header(); 
+?>
+        <div id="content"> <script type="text/javascript">
             $(window).load(function() {
 					$('#slider3').nivoSlider({
 						effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
@@ -231,21 +206,5 @@ Arduino
                             <div id="suc_caption6" class="nivo-html-caption"><span style="color:#ffCC00;">Asher Vollmer</span> - IMD graduate Vollmer is the creator of the best-selling addictive puzzle/word game, Puzzlejuice, that will "punch your brain in the face," available as a universal app for the iPad and iPhone.  He is also part of the team that created The Misadventures of P.B. Winterbottom.
 </div>
                         </div>
-		<!-- InstanceEndEditable -->
-       	</div>
-        <div id="footer">
-            <div class="followtext">&nbsp;&nbsp;FOLLOW US ONLINE</div>
-			<div class="scalogo"><a href="http://cinema.usc.edu" target="_blank"><img src="images/footer_scalogo.png" /></a></div>
-			<div class="scafacebook"><a href="http://www.facebook.com/usccinema" target="_blank"><img src="images/footer_scafacebook.png" /></a></div>
-            <div class="scatwitter"><a href="http://twitter.com/usccinema" target="_blank"><img src="images/footer_scatwitter.png" /></a></div>
-            <div class="scayoutube"><a href="http://www.youtube.com/usccinematicarts" target="_blank"><img src="images/footer_scayoutube.png" /></a></div>
-            <div class="vitlogo"><a href="http://viterbi.usc.edu" target="_blank"><img src="images/footer_vitlogo.png" /></a></div>
-            <div class="vitfacebook"><a href="http://www.facebook.com/USCViterbi" target="_blank"><img src="images/footer_scafacebook.png" /></a></div>
-            <div class="vittwitter"><a href="http://twitter.com/USCViterbi" target="_blank"><img src="images/footer_scatwitter.png" /></a></div>
-            <div class="vityoutube"><a href="http://www.youtube.com/user/USCViterbi" target="_blank"><img src="images/footer_scayoutube.png" /></a></div>
-            <div class="legaltext">Copyright 2001-2012, All Rights Reserved.
-<!--<span><a href="../ComingSoon.html">PRIVACY POLICY</a> | <a href="../ComingSoon.html">CONTACT US</a> | <a href="../ComingSoon.html">SITE MAP</a></span>--></div>
-		</div>
-	</div>
-</body>
-<!-- InstanceEnd --></html>
+	  </div>
+<?php get_footer(); ?>

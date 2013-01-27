@@ -11,7 +11,7 @@ get_header();
 						boxCols: 8, // For box animations
 						boxRows: 4, // For box animations
 						animSpeed: 750, // Slide transition speed
-						pauseTime: 9999999, // How long each slide will show
+						pauseTime: 7500, // How long each slide will show
 						startSlide: 0, // Set starting Slide (0 index)
 						directionNav: true, // Next & Prev navigation
 						directionNavHide: true, // Only show on hover

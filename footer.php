@@ -11,3 +11,6 @@
 		<div class="legaltext">Copyright 2001-2012, All Rights Reserved.</div>
 	</footer> <!-- #footer -->
 </div> <!-- #wrapper -->
+<?php wp_footer(); ?>
+</body>
+</html>

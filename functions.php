@@ -229,3 +229,8 @@ class USCGames_Homeslider extends WP_Widget {
 
 // register USCGames_homeslider widget
 add_action( 'widgets_init', create_function( '', 'register_widget( "uscgames_homeslider" );' ) );
+// register top nav menu
+add_action( 'after_setup_theme', 'regMyMenu' );
+function regMyMenus() {
+register_nav_menu( array( 'head-nav' => __( 'Header Navigation Menu' ) ) );
+}

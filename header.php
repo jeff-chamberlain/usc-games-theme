@@ -23,13 +23,27 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
 	<header id="navbar">
-		<a href="../home.php"><span class="games_logo"></span></a>
-		<a href="http://www.usc.edu/" target="_blank"><span class="usc_logo"></span></a>
-		<a href="../about.php"><span class="about">about</span></a>
-		<a href="../news.php"><span class="news">news</span></a> 
-		<a href="../events.php"><span class="events">events</span></a> 
-		<a href="../faculty.php"><span class="faculty">faculty</span></a> 
-		<a href="../games.php"><span class="games">games</span></a> 
+    	<a href="<?php echo site_url(); ?>"><span class="games_logo"></span></a>
+        <a href="http://www.usc.edu/" target="_blank"><span class="usc_logo"></span></a>
+		<?php
+		$headnav = array(
+		  'theme_location'  => 'head-nav',
+		  'menu'            => 'head-nav',
+		  'container'       => 'div',
+		  'container_class' => 'header-menu',
+		  'container_id'    => '',
+		  'menu_class'      => 'header-navclass',
+		  'menu_id'         => '',
+		  'echo'            => true,
+		  'fallback_cb'     => 'wp_page_menu',
+		  'items_wrap'      => '<ul>%3$s</ul>'
+		  );
+		if(function_exists('wp_nav_menu')) {
+		wp_nav_menu( $headnav );
+		} else {
+			echo '???';
+		}
+		?>
 	</header> <!-- #navbar -->
 	<div id="background"> <!-- MESSY -->
 	</div> <!-- #background -->
