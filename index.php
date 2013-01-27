@@ -70,7 +70,7 @@ get_header(); ?>
 			</script>
         	<div id="mainslider" class="featureSlider">
             	<div id="slider" class="nivoSlider">
-    				<a href="http://cinema.usc.edu/news/article.cfm?id=12521" target="_blank"><img src="<?php echo get_option('mt_favorite_color'); ?>" alt=""title="#caption1" /></a>
+    				<a href="http://cinema.usc.edu/news/article.cfm?id=12521" target="_blank"><img src="<?php echo $_GET[ 'mt_favorite_color' ] ?>" alt=""title="#caption1" /></a>
    					<a href="http://cinema.usc.edu/news/article.cfm?id=12842" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider2.png" alt="" title="#caption2" /></a>
     				<a href="http://cinema.usc.edu/news/article.cfm?id=12795" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider3.png" alt="" title="#caption3" /></a>
                     <a href="http://cinema.usc.edu/news/article.cfm?id=12769" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider4.png" alt="" title="#caption4" /></a>

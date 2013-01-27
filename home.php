@@ -1,12 +1,7 @@
 <?php
-/**
- * The frontpage
- *
- * @package USC Games Theme
- * @since USCGames Theme v1.0
- */
- 
-get_header(); ?>
+/* Template Name: USC Games Home Page */  
+get_header(); 
+?>
 <div id="content">
  <script type="text/javascript">
 				$(window).load(function() {
@@ -16,7 +11,7 @@ get_header(); ?>
 						boxCols: 8, // For box animations
 						boxRows: 4, // For box animations
 						animSpeed: 750, // Slide transition speed
-						pauseTime: 7500, // How long each slide will show
+						pauseTime: 9999999, // How long each slide will show
 						startSlide: 0, // Set starting Slide (0 index)
 						directionNav: true, // Next & Prev navigation
 						directionNavHide: true, // Only show on hover
@@ -69,43 +64,7 @@ get_header(); ?>
 				});
 			</script>
         	<div id="mainslider" class="featureSlider">
-            	<div id="slider" class="nivoSlider">
-    				<a href="http://cinema.usc.edu/news/article.cfm?id=12521" target="_blank"><img src="<?php echo get_option('mt_favorite_color'); ?>" alt=""title="#caption1" /></a>
-   					<a href="http://cinema.usc.edu/news/article.cfm?id=12842" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider2.png" alt="" title="#caption2" /></a>
-    				<a href="http://cinema.usc.edu/news/article.cfm?id=12795" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider3.png" alt="" title="#caption3" /></a>
-                    <a href="http://cinema.usc.edu/news/article.cfm?id=12769" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider4.png" alt="" title="#caption4" /></a>
-                    <a href="http://cinema.usc.edu/news/article.cfm?id=12697" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/slider5.png" alt="" title="#caption5" /></a>
-				</div>
-				<div id="caption1" class="nivo-html-caption">
-                    <div class="textbox">
-                                   <div class="content">For the third year in a row, The Princeton Review has named USC the top school in the nation for studying video game design for both undergraduate and graduate programs. USC has led the category every year since the list debuted in 2010.
-                    </div>
-                    </div>
-                </div>
-                <div id="caption2" class="nivo-html-caption">
-                	<div class="textbox">
-                        <div class="content">Puzzlejuice is pitched as a "game that will punch your brain in the face." The game was designed by recent USC alum Asher Vollmer and has been racking up accolades since it was released in January of this year.
-                    	</div>
-                    </div>
-                </div>
-                <div id="caption3" class="nivo-html-caption">
-                	<div class="textbox">
-                        <div class="content">The Interactive Media Division at the USC School of Cinematic Arts has the backing and attention of many top video game companies and personalities. This July, Activision Blizzard executive George Rose joins their ranks by establishing the Rose Family Foundation Fellowship for Interactive Entertainment.
-                    	</div>
-                	</div>
-                </div>
-                <div id="caption4" class="nivo-html-caption">
-                	<div class="textbox">
-                        <div class="content">Ranked the number one game design school in North America by the Princeton Review and GamerPro Media for the third year running, USC is home to renowned faculty and staff.
-                    	</div>
-                    </div>
-                </div>
-                <div id="caption5" class="nivo-html-caption">
-                	<div class="textbox">
-                        <div class="content"> With the addition of leading game designer Richard Lemarchand to the faculty list beginning in Fall 2012, the bar has been raised even higher for USC Games.
-                    	</div>
-              		</div>
-            	</div>
+            	<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('uscgames_slider1')) : else : ?><img src="http://images.wikia.com/zomg/images/4/4d/Red-X.svg" /><?php endif; ?>
             </div>
             <div class="textbox" style="top:36px; left:20px; width:374px;">
                     <div class="content" style="font-size:18px; line-height:120%;"><span class="header">_about</span><br /><br />Recognized as the #1 game design program in North America by the Princeton Review and GamePro Magazine, USC Games represents an exciting collaboration between the School of Cinematic Arts' <a href="http://interactive.usc.edu/" target="_blank">Interactive Media Division</a> and the Viterbi School of Engineering's <a href="http://www.cs.usc.edu/" target="_blank">Department of Computer Science</a>. Incorporating elements of design, artistry and engineering, USC Games offers an utterly unique educational experience for students, and serves as the launching pad for them to play significant roles in the game design field. With rigorous, hands-on instruction from master designers, engineers and working professionals in the industry, students have an unprecedented level of opportunity to delve into every aspect of creating games for a global audience.<br /><br /><p align="right"><a href="about.html">READ MORE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
