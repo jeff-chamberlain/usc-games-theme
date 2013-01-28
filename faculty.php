@@ -1,40 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>
-<!-- InstanceBeginEditable name="Head" -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>USC Games - Faculty</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<!-- InstanceEndEditable -->
-<link rel="icon" href="http://www.usc.edu/favicon.ico">
-</head>
-<body>
-	<div id="wrapper">
-      <div id="navbar">
-        	<a href="index.html"><span class="games_logo"></span></a>
-            <a href="http://www.usc.edu/" target="_blank"><span class="usc_logo"></span></a>
-            <a href="about.html"><span class="about">about</span></a>
-            <a href="news.html"><span class="news">news</span></a> 
-            <a href="events.html"><span class="events">events</span></a> 
-            <a href="faculty.html"><span class="faculty">faculty</span></a> 
-            <a href="games.html"><span class="games">games</span></a> 
-        </div>
-    	<div id="background">
-        </div>
+<?php
+/* Template Name: USC Games Faculty Page */  
+get_header(); 
+?>
         <div id="content">
-		<!-- InstanceBeginEditable name="Content" -->
-        <div class="textbox" style="left:25px; width:930px;">
-                    <div style="position:relative; height:auto">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                        <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                    </div>
-                    <div style="position:relative; height:auto;">
-                        <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
-                        <div class="content" style="padding-left:28px; padding-right:28px;"><span class="header" style="font-size:200%"><p align="right">_faculty</p></span><br />
-                        Students in USC Games benefit from the expertise of top-flight faculty members, who possess a broad range of real-world professional experience in every facet of game design.<br /><br />
-                        	<div style="float:left; width:380px;">
-                            	<span style="color:#ffcc00;">School of Cinematic Arts:</span>
+<div class="textbox" style="left:25px; width:930px;">
+                <div style="position:relative; height:auto">
+                  <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
+                    <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
+                    <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
+                </div>
+                <div style="position:relative; height:auto;">
+                    <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
+                    <div class="content" style="padding-left:28px; padding-right:28px;"><span class="header" style="font-size:200%"><p align="right">_faculty</p></span><br />
+                      Students in USC Games benefit from the expertise of top-flight faculty members, who possess a broad range of real-world professional experience in every facet of game design.<br /><br />
+                       	<div style="float:left; width:380px;">
+                           	<span style="color:#ffcc00;">School of Cinematic Arts:</span>
 <br /><br />
 <a href="http://cinema.usc.edu/faculty/profile.cfm?id=6513&first=&last=fullerton&title=&did=50&referer=facultydirectory%2Ecfm&startpage=1&startrow=1" target="_blank">Tracy Fullerton</a> - Chair of SCA Interactive Media and Director of the USC Game Innovation Lab. Fullerton is an experimental game designer, entrepreneur, and author of Game Design Workshop, a design textbook in use at game programs worldwide. She teaches SCA's core game design course for graduates.
 <br /><br />
@@ -60,11 +40,11 @@ Tom Frisina - Formerly vice-president and general manager of EA Partners, Frisin
 <a href="http://cinema.usc.edu/faculty/profile.cfm?id=33648&first=&last=nashak&title=&did=50&referer=facultydirectory%2Ecfm&startpage=1&startrow=1" target="_blank">Robert Nashak</a> - EVP of Digital Entertainment at BBC Worldwide, Nashak has formerly been an executive at Electronic Arts, Yahoo! Games, Glu Mobile and Vivendi Universal.  He teaches business and management of games.
 <br /><br />
 <a href="http://cinema.usc.edu/faculty/profile.cfm?id=33654&first=&last=olin&title=&did=50&referer=facultydirectory%2Ecfm&startpage=1&startrow=1" target="_blank">Joseph Olin</a > - President Emeritus of the Academy of Interactive Arts and Sciences, Olin has a long history in the business and marketing of interactive media and digital entertainment.  He teaches business and management of games.
-							</div>
-                            <div style="float:left; width:20px; height:10px;">
-                            </div>
-                            <div style="float:left; width:380px;">
-                            	<span style="color:#ffcc00;">Viterbi School of Engineering:</span>
+						</div>
+                        <div style="float:left; width:20px; height:10px;">
+                        </div>
+                        <div style="float:left; width:380px;">
+                           	<span style="color:#ffcc00;">Viterbi School of Engineering:</span>
 <br /><br />
 <a href="http://www.cs.usc.edu/faculty-staff/details.asp?lname=Zyda&fname=Michael" target="_blank">Michael Zyda</a> - Professor of Engineering Practice in the USC Department of Computer Science, Zyda is a is a pioneer in the fields of computer graphics, networked virtual environments, modeling and simulation, and serious and entertainment games.
 <br /><br />
@@ -91,19 +71,18 @@ Tom Frisina - Formerly vice-president and general manager of EA Partners, Frisin
 <a href="http://people.ict.usc.edu/~lane/" target="_blank">H. Chad Lane</a> - A research scientist at the Institute for Creative Technologies, Lane studies the application of artificial intelligence (AI) and video game techniques to educational problems.
 <br /><br />
 <a href="http://ict.debevec.org/~debevec/" target="_blank">Paul Debevec</a> - leads the <a href="http://gl.ict.usc.edu/" target="_blank">Graphics Laboratory</a> at the Institute for Creative Technologies, is a Research Professor in the <a href="http://www.cs.usc.edu/" target="_blank">USC Computer Science Department</a>, and is the Vice-President of <a href="http://www.siggraph.org/" target="_blank">ACM SIGGRAPH</a>.
-                            </div>
-                            <div style="clear:both;"></div>
-                    	</div>
-                        <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                    </div>
-                    <div style="position:relative; height:auto;">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                        <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
-                    </div>
+                        </div>
+                        <div style="clear:both;"></div>
+               	    </div>
+                    <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
                 </div>
-		<!-- InstanceEndEditable -->
-       	</div>
+                <div style="position:relative; height:auto;">
+                  <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
+                    <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
+                    <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
+                </div>
+            </div>
+	  </div>
         <div id="footer">
             <div class="followtext">&nbsp;&nbsp;FOLLOW US ONLINE</div>
 			<div class="scalogo"><a href="http://cinema.usc.edu" target="_blank"><img src="images/footer_scalogo.png" /></a></div>
@@ -119,4 +98,4 @@ Tom Frisina - Formerly vice-president and general manager of EA Partners, Frisin
 		</div>
 	</div>
 </body>
-<!-- InstanceEnd --></html>
+</html>

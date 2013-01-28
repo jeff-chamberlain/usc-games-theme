@@ -1,34 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>
-<!-- InstanceBeginEditable name="Head" -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>USC Games - News</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<link rel="stylesheet" href="news-slider.css" type="text/css" media="screen" />
-
-<!--Scripts-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-<script src="scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-<!-- InstanceEndEditable -->
-<link rel="icon" href="http://www.usc.edu/favicon.ico">
-</head>
-<body>
-	<div id="wrapper">
-      <div id="navbar">
-        	<a href="index.html"><span class="games_logo"></span></a>
-            <a href="http://www.usc.edu/" target="_blank"><span class="usc_logo"></span></a>
-            <a href="about.html"><span class="about">about</span></a>
-            <a href="news.html"><span class="news">news</span></a> 
-            <a href="events.html"><span class="events">events</span></a> 
-            <a href="faculty.html"><span class="faculty">faculty</span></a> 
-            <a href="games.html"><span class="games">games</span></a> 
-        </div>
-    	<div id="background">
-        </div>
-        <div id="content">
-		<!-- InstanceBeginEditable name="Content" -->
-        <script type="text/javascript">
+<?php
+/* Template Name: USC Games News Page */  
+get_header(); 
+?>
+        <div id="content"> <script type="text/javascript">
 				$(window).load(function() {
 					$('#slider4').nivoSlider({
 						effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
@@ -450,8 +424,7 @@ Some of the encounters that students have had so far include meetings with direc
                         <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
                     </div>
                 </div>
-		<!-- InstanceEndEditable -->
-       	</div>
+	  </div>
         <div id="footer">
             <div class="followtext">&nbsp;&nbsp;FOLLOW US ONLINE</div>
 			<div class="scalogo"><a href="http://cinema.usc.edu" target="_blank"><img src="images/footer_scalogo.png" /></a></div>
@@ -467,4 +440,4 @@ Some of the encounters that students have had so far include meetings with direc
 		</div>
 	</div>
 </body>
-<!-- InstanceEnd --></html>
+</html>

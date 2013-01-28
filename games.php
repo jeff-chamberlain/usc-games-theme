@@ -1,10 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>
-<!-- InstanceBeginEditable name="Head" -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>USC Games - Games</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<?php
+/* Template Name: USC Games Games Page */  
+get_header(); 
+?>
 <style type="text/css">
 .content {
 	font-size:90%;
@@ -19,51 +16,34 @@
 	overflow:hidden;
 }
 </style>
-<!-- InstanceEndEditable -->
-<link rel="icon" href="http://www.usc.edu/favicon.ico">
-</head>
-<body>
-	<div id="wrapper">
-      <div id="navbar">
-        	<a href="index.html"><span class="games_logo"></span></a>
-            <a href="http://www.usc.edu/" target="_blank"><span class="usc_logo"></span></a>
-            <a href="about.html"><span class="about">about</span></a>
-            <a href="news.html"><span class="news">news</span></a> 
-            <a href="events.html"><span class="events">events</span></a> 
-            <a href="faculty.html"><span class="faculty">faculty</span></a> 
-            <a href="games.html"><span class="games">games</span></a> 
-        </div>
-    	<div id="background">
-        </div>
         <div id="content">
-		<!-- InstanceBeginEditable name="Content" -->
-        <div class="textbox" style="left:40px; width:370px; position:absolute;">
-                    <div style="position:relative; height:auto">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                        <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                    </div>
-                    <div style="position:relative; height:auto;">
-                        <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
-                        <div class="content">
-                        	<span class="header" style="font-size:200%"><p align="center">_featured games</p></span><br />
-                            <p style="padding-left:45px; text-transform:uppercase; font-size:140%;">
-                            <a href="#combiform">combiform</a><br /><br />
-                            <a href="#inmemory">in memory</a><br /><br />
-                            <a href="#clockworkzombies">clockwork zombies</a><br /><br />
-                            <a href="#nevermind">nevermind</a><br /><br />
-                            <a href="#minuslab">tales from the minus lab</a><br /><br />
-                            <a href="#blink">blink</a><br /><br />
-                            <a href="#forestwalker">forestwalker</a><br /><br />
-                        </div>
-                        <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                    </div>
-                    <div style="position:relative; height:auto;">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                        <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
-                    </div>
+<div class="textbox" style="left:40px; width:370px; position:absolute;">
+                <div style="position:relative; height:auto">
+                  <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
+                    <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
+                    <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
                 </div>
+                <div style="position:relative; height:auto;">
+                    <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
+                    <div class="content">
+                       	<span class="header" style="font-size:200%"><p align="center">_featured games</p></span><br />
+                        <p style="padding-left:45px; text-transform:uppercase; font-size:140%;">
+                          <a href="#combiform">combiform</a><br /><br />
+                          <a href="#inmemory">in memory</a><br /><br />
+                          <a href="#clockworkzombies">clockwork zombies</a><br /><br />
+                          <a href="#nevermind">nevermind</a><br /><br />
+                          <a href="#minuslab">tales from the minus lab</a><br /><br />
+                          <a href="#blink">blink</a><br /><br />
+                          <a href="#forestwalker">forestwalker</a><br /><br />
+                    </div>
+                    <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
+                </div>
+                <div style="position:relative; height:auto;">
+                  <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
+                    <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
+                    <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
+                </div>
+            </div>
                 <div style="height:410px; width:472px; margin-top:85px; margin-right:85px; float:right; display:inline;">
                 	<a name="combiform"><p align="right" style="margin:0px;"><span class="header">_combiform</span></p></a>
                     <div style="width:472px; height:368px; background-image:url(images/games_bgright.png);">
@@ -270,10 +250,9 @@ Strategically place your heroes to overcome waves of enemies with grid-based bra
                 </div>
                 <div style="clear:both;"></div>
                 	<div style="height:220px;">
-                	</div>
+              	  </div>
                 <div style="clear:both"></div>
-		<!-- InstanceEndEditable -->
-       	</div>
+	  </div>
         <div id="footer">
             <div class="followtext">&nbsp;&nbsp;FOLLOW US ONLINE</div>
 			<div class="scalogo"><a href="http://cinema.usc.edu" target="_blank"><img src="images/footer_scalogo.png" /></a></div>
@@ -289,4 +268,4 @@ Strategically place your heroes to overcome waves of enemies with grid-based bra
 		</div>
 	</div>
 </body>
-<!-- InstanceEnd --></html>
+</html>
