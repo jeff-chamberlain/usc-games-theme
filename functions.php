@@ -263,32 +263,72 @@ function uscgames_create_eventandnews() {
             'has_archive' => true
         )
     );
+	 register_post_type( 'uscgames_news',
+        array(
+            'labels' => array(
+                'name' => 'News',
+                'singular_name' => 'News Story',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New News Story',
+                'edit' => 'Edit',
+                'edit_item' => 'Edit News Story',
+                'new_item' => 'New News Story',
+                'view' => 'View',
+                'view_item' => 'View News Story',
+                'search_items' => 'Search News',
+                'not_found' => 'No News found',
+                'not_found_in_trash' => 'No News found in Trash',
+            ),
+ 
+            'public' => true,
+            'menu_position' => 5,
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+            'menu_icon' => 'http://www.usc.edu/favicon.ico',
+            'has_archive' => true
+        )
+    );
 }
 //create custom date field for events
-add_action( 'admin_init', 'uscgames_addeventdate' );
-function uscgames_addeventdate() {
-    add_meta_box( 'uscgames_eventdate',
-        'Event Date',
-        'display_eventdate_metabox',
+add_action( 'admin_init', 'uscgames_addeventfields' );
+function uscgames_addeventfields() {
+    add_meta_box( 'uscgames_eventfields',
+        'Event Details',
+        'display_eventfields_metabox',
         'uscgames_events', 'normal', 'low'
     );
-function display_eventdate_metabox( $uscgames_event ) {
+function display_eventfields_metabox( $uscgames_event ) {
 // Retrieve current date based on event ID
 $event_date = date("m/d/y", get_post_meta( $uscgames_event->ID, 'uscgames_event_date', true ) );
+$event_when = get_post_meta( $uscgames_event->ID, 'uscgames_event_when', true );
+$event_where = get_post_meta( $uscgames_event->ID, 'uscgames_event_where', true );
     ?>
     <p>
     <label for="event_date"><?php _e( 'Event Date (mm/dd/yy):' ); ?></label> 
 	<input type="text" size="10" id="event_date" name="event_date" value="<?php echo $event_date; ?>" />
     </p>
+    <p>
+    <label for="event_when"><?php _e( 'Event When (More detailed description that may include time):' ); ?></label> 
+	<input type="text" size="50" id="event_when" name="event_when" value="<?php echo $event_when; ?>" />
+    </p>
+    <p>
+    <label for="event_where"><?php _e( 'Event Where:' ); ?></label> 
+	<input type="text" size="50" id="event_where" name="event_where" value="<?php echo $event_where; ?>" />
+    </p>
 <?php }
 }
-add_action( 'save_post', 'add_eventdate_field', 10, 2 );
-function add_eventdate_field( $event_id, $event ) {
+add_action( 'save_post', 'add_event_fields', 10, 2 );
+function add_event_fields( $event_id, $event ) {
     // Check post type for events
     if ( $event->post_type == 'uscgames_events' ) {
         // Store data in post meta table if present in post data
         if ( isset( $_POST['event_date'] ) && $_POST['event_date'] != '' ) {
             update_post_meta( $event_id, 'uscgames_event_date', strtotime( $_POST['event_date'] ) );
+        }
+		if ( isset( $_POST['event_date'] ) && $_POST['event_when'] != '' ) {
+            update_post_meta( $event_id, 'uscgames_event_when', $_POST['event_when'] );
+        }
+		if ( isset( $_POST['event_date'] ) && $_POST['event_date'] != '' ) {
+            update_post_meta( $event_id, 'uscgames_event_where', $_POST['event_where'] );
         }
     }
 }
