@@ -274,7 +274,7 @@ function uscgames_addeventdate() {
     );
 function display_eventdate_metabox( $uscgames_event ) {
 // Retrieve current date based on event ID
-$event_date = date( get_post_meta( $uscgames_event->ID, 'uscgames_event_date', true ) );
+$event_date = date("m/d/y", get_post_meta( $uscgames_event->ID, 'uscgames_event_date', true ) );
     ?>
     <p>
     <label for="event_date"><?php _e( 'Event Date (mm/dd/yy):' ); ?></label> 
