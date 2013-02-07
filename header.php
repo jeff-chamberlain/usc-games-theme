@@ -17,6 +17,20 @@
 <meta name="viewport" content="width=device-width" />
 <title>USC Games - <?php if (is_front_page()) { ?>Home<?php  } else { wp_title(''); } ?></title>
 <link rel="icon" href="http://www.usc.edu/favicon.ico">
+<?php if( is_front_page() ) { ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/feature-slider.css" type="text/css" media="screen" />;
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/faculty-slider.css" type="text/css" media="screen" />;
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<?php } elseif ( is_page_template( 'about.php' ) ) { ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/about-slider.css" type="text/css" media="screen" />;
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<?php } elseif ( is_page_template( 'news.php' )  ) { ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/news-slider.css" type="text/css" media="screen" />;
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<?php }; ?>
 <?php wp_head(); ?>
 </head>
  

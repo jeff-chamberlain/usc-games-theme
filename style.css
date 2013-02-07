@@ -135,11 +135,9 @@ body {
 	height:358px;
 }
 #facultyfeatured {
-	top:0px;
-	right:38px;
+	float:left;
 	width:218px;
 	height:260px;
-	position:absolute;
 	background-image:url(images/faculty_background.png);
 }
 #successstories {
@@ -174,15 +172,14 @@ body {
 	height:auto;
 	border-radius:10px;
 	box-shadow:0px 0px 5px 4px #084541;
-	padding:5px;
-	margin:25px;
+	margin:20px 20px;
 	background-color:rgba(0,0,0,.5);
 }
 .textbox .content {
 	width:auto;
 	height:auto;
 	word-wrap: break-word;
-	padding:18px;
+	padding:29px 18px;
 }
 .textbox p {
 	margin:0px;
