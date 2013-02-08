@@ -126,14 +126,6 @@ body {
 	width:513px;
 	height:411px;
 }
-#newsslideshow {
-	position:relative;
-	background-image:url(images/news_sliderbg.png);
-	left:325px;
-	top:-20px;
-	width:483px;
-	height:358px;
-}
 #facultyfeatured {
 	float:left;
 	width:218px;

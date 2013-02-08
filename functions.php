@@ -10,15 +10,9 @@
 /** Enqueue scripts and styles */
 function uscgames_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
-    
 }
 add_action( 'wp_enqueue_scripts', 'uscgames_scripts' );
-/*
-*Remove the admin bar from the front end
-*/
-show_admin_bar( false );
-/*
-*Add the main home image slider as a widget area
+/*Add the main home image slider as a widget area
 */
 register_sidebar(array( 
         'name' => 'USCGames Main Slider',  
@@ -41,6 +35,11 @@ register_sidebar(array(
 		'class'         => '' ,
 		'before_widget' => '',
 		'after_widget'  => '',));
+/*
+*Remove the admin bar from the front end
+*/
+show_admin_bar( false );
+/*
 /**
  * Adds USCGames_homeslider widget.
  */

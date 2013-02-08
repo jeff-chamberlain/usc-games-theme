@@ -35,9 +35,19 @@ get_header();
 	});
 	});
   </script>
-  <div class="textbox" style="left:25px; width:930px;">
+  <div class="textbox" style="left:25px; width:890px;">
     <div class="content">
-      <span class="header"><a name="top"></a>_news</span>
+    <div>
+      <div>
+      <span class="header" style="position:relative; top:-20px;"><a name="top"></a>_news</span>
+      </div>
+      <div style="width:260px; float:left; padding-right:70px;">
+        <span style="font-family:headerfont;">07.05.12</span><br />
+        <p style="padding-left:35px;">
+        <span style="color:#ffcc00;">ROSE FAMILY FELLOWSHIP ESTABLISHED AT SCA</span><br />
+        Fighting spirit shadowcat, "green arrow huntress captain planet gambit jack bauer hal jordan." Thundra spider-woman tandy bowen penance kaine garrison kane stacy x nuke goku ymir, mephisto.<br />	
+        <a href="#story1">READ MORE >></a></p>
+      </div>
       <div id="newsslideshow" class="newsSlider">
         <div id="slider4" class="nivoSlider">
           <a href="#story1"><img src="images/news_slider1.png" alt="" /></a>
@@ -58,12 +68,7 @@ get_header();
         Caption4
         </div>-->
       </div>
-      <div style="width:260px;">
-        <span style="font-family:headerfont;">07.05.12</span><br />
-        <p style="padding-left:35px;">
-        <span style="color:#ffcc00;">ROSE FAMILY FELLOWSHIP ESTABLISHED AT SCA</span><br />
-        Activision Blizzard Executive donates to IMD<br />	
-        <a href="#story1">READ MORE >></a></p>
+      <div style="clear:both;"></div>
       </div>
       <div class="thirdbox">
         <span style="font-family:headerfont;">06.07.12</span><br />
