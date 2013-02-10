@@ -15,6 +15,7 @@ get_header();
       <div>
 		<?php $args = array( 'post_type' => 'uscgames_events',
 							 'post_status' => 'publish',
+							 'posts_per_page' => '3',
 							 'order' => 'ASC',
 							 'orderby' => 'meta_value',
 							 'meta_compare' => '>=',
@@ -46,7 +47,7 @@ get_header();
       </div>
     </div>
   </div>
-  <?php //rewind_posts();
+  <?php 
   $comingeventslist = new WP_Query($args);
   while( $comingeventslist->have_posts()  && ($event_count < 10 ) ) : $comingeventslist->the_post();
   $event_count++;
@@ -67,6 +68,7 @@ get_header();
   <?php 
   $pastargs = array( 'post_type' => 'uscgames_events',
 							 'post_status' => 'publish',
+							 'posts_per_page' => '10',
 							 'order' => 'DEC',
 							 'orderby' => 'meta_value',
 							 'meta_compare' => '<=',

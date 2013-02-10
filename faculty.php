@@ -3,17 +3,10 @@
 get_header(); 
 ?>
         <div id="content">
-<div class="textbox" style="left:25px; width:930px;">
-                <div style="position:relative; height:auto">
-                  <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                    <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                    <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                </div>
-                <div style="position:relative; height:auto;">
-                    <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
-                    <div class="content" style="padding-left:28px; padding-right:28px;"><span class="header" style="font-size:200%"><p align="right">_faculty</p></span><br />
+<div class="textbox" style="left:25px; width:890px;">
+                    <div class="content" style="padding-left:50px; padding-right:50px;"><span class="header" style="font-size:200%"><p align="right">_faculty</p></span><br />
                       Students in USC Games benefit from the expertise of top-flight faculty members, who possess a broad range of real-world professional experience in every facet of game design.<br /><br />
-                       	<div style="float:left; width:380px;">
+                       	<div style="float:left; width:380px; margin-right:30px">
                            	<span style="color:#ffcc00;">School of Cinematic Arts:</span>
 <br /><br />
 <a href="http://cinema.usc.edu/faculty/profile.cfm?id=6513&first=&last=fullerton&title=&did=50&referer=facultydirectory%2Ecfm&startpage=1&startrow=1" target="_blank">Tracy Fullerton</a> - Chair of SCA Interactive Media and Director of the USC Game Innovation Lab. Fullerton is an experimental game designer, entrepreneur, and author of Game Design Workshop, a design textbook in use at game programs worldwide. She teaches SCA's core game design course for graduates.
@@ -41,8 +34,6 @@ Tom Frisina - Formerly vice-president and general manager of EA Partners, Frisin
 <br /><br />
 <a href="http://cinema.usc.edu/faculty/profile.cfm?id=33654&first=&last=olin&title=&did=50&referer=facultydirectory%2Ecfm&startpage=1&startrow=1" target="_blank">Joseph Olin</a > - President Emeritus of the Academy of Interactive Arts and Sciences, Olin has a long history in the business and marketing of interactive media and digital entertainment.  He teaches business and management of games.
 						</div>
-                        <div style="float:left; width:20px; height:10px;">
-                        </div>
                         <div style="float:left; width:380px;">
                            	<span style="color:#ffcc00;">Viterbi School of Engineering:</span>
 <br /><br />
@@ -73,29 +64,8 @@ Tom Frisina - Formerly vice-president and general manager of EA Partners, Frisin
 <a href="http://ict.debevec.org/~debevec/" target="_blank">Paul Debevec</a> - leads the <a href="http://gl.ict.usc.edu/" target="_blank">Graphics Laboratory</a> at the Institute for Creative Technologies, is a Research Professor in the <a href="http://www.cs.usc.edu/" target="_blank">USC Computer Science Department</a>, and is the Vice-President of <a href="http://www.siggraph.org/" target="_blank">ACM SIGGRAPH</a>.
                         </div>
                         <div style="clear:both;"></div>
-               	    </div>
-                    <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                </div>
-                <div style="position:relative; height:auto;">
-                  <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                    <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                    <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
                 </div>
             </div>
 	  </div>
-        <div id="footer">
-            <div class="followtext">&nbsp;&nbsp;FOLLOW US ONLINE</div>
-			<div class="scalogo"><a href="http://cinema.usc.edu" target="_blank"><img src="images/footer_scalogo.png" /></a></div>
-			<div class="scafacebook"><a href="http://www.facebook.com/usccinema" target="_blank"><img src="images/footer_scafacebook.png" /></a></div>
-            <div class="scatwitter"><a href="http://twitter.com/usccinema" target="_blank"><img src="images/footer_scatwitter.png" /></a></div>
-            <div class="scayoutube"><a href="http://www.youtube.com/usccinematicarts" target="_blank"><img src="images/footer_scayoutube.png" /></a></div>
-            <div class="vitlogo"><a href="http://viterbi.usc.edu" target="_blank"><img src="images/footer_vitlogo.png" /></a></div>
-            <div class="vitfacebook"><a href="http://www.facebook.com/USCViterbi" target="_blank"><img src="images/footer_scafacebook.png" /></a></div>
-            <div class="vittwitter"><a href="http://twitter.com/USCViterbi" target="_blank"><img src="images/footer_scatwitter.png" /></a></div>
-            <div class="vityoutube"><a href="http://www.youtube.com/user/USCViterbi" target="_blank"><img src="images/footer_scayoutube.png" /></a></div>
-            <div class="legaltext">Copyright 2001-2012, All Rights Reserved.
-<!--<span><a href="../ComingSoon.html">PRIVACY POLICY</a> | <a href="../ComingSoon.html">CONTACT US</a> | <a href="../ComingSoon.html">SITE MAP</a></span>--></div>
-		</div>
-	</div>
-</body>
-</html>
+<!-- #content -->
+<?php get_footer(); ?>

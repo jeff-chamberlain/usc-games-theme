@@ -41,19 +41,21 @@ get_header();
       <div>
       <span class="header" style="position:relative; top:-20px;"><a name="top"></a>_news</span>
       </div>
-      <div style="width:260px; float:left; padding-right:70px;">
-        <span style="font-family:headerfont;">07.05.12</span><br />
-        <p style="padding-left:35px;">
-        <span style="color:#ffcc00;">ROSE FAMILY FELLOWSHIP ESTABLISHED AT SCA</span><br />
-        Fighting spirit shadowcat, "green arrow huntress captain planet gambit jack bauer hal jordan." Thundra spider-woman tandy bowen penance kaine garrison kane stacy x nuke goku ymir, mephisto.<br />	
-        <a href="#story1">READ MORE >></a></p>
-      </div>
       <div id="newsslideshow" class="newsSlider">
         <div id="slider4" class="nivoSlider">
-          <a href="#story1"><img src="images/news_slider1.png" alt="" /></a>
-          <a href="#story2"><img src="images/news_slider2.png" alt="" /></a>
-          <a href="#story3"><img src="images/news_slider3.png" alt="" /></a>
-          <a href="#story4"><img src="images/news_slider4.png" alt="" /></a>
+		  <?php $args = array( 'post_type' => 'uscgames_news',
+                               'post_status' => 'publish',
+                               'order' => 'ASC',
+                               'orderby' => 'meta_value',
+                               'posts_per_page' => '4' );
+          $topnewslist = new WP_Query($args);
+          while( $topnewslist->have_posts() ) : $topnewslist->the_post(); 
+			$post_count++;
+            $post_link = '#story' .  $post_count ?>
+            <a href="<?php echo $post_link ?>"><?php if ( has_post_thumbnail() ) : the_post_thumbnail( array(472,351) ); else : echo 'blahblahblah'; endif; ?></a>
+          <?php endwhile; 
+		  wp_reset_postdata(); ?>
+          
         </div>
         <!--<div id="news_caption1" class="nivo-html-caption">
         Caption1
@@ -68,52 +70,56 @@ get_header();
         Caption4
         </div>-->
       </div>
-      <div style="clear:both;"></div>
-      </div>
-      <div class="thirdbox">
-        <span style="font-family:headerfont;">06.07.12</span><br />
-        <p style="padding-left:35px;">
-        <span style="color:#ffcc00;">DENNIS WIXON "INTERFACES" WITH IMD</span><BR />
-        Pioneer in User Interfaces Installed as Microsoft Endowed Professor<br />	
-        <a href="#story2">READ MORE >></a></p>
-      </div>
-      <div class="thirdbox">
-        <span style="font-family:headerfont;">05.02.12</span><br />
-        <p style="padding-left:35px;">
-        <span style="color:#ffcc00;">USC GAMES STUDENTS SHOWCASE WORK AT FOURTEENTH DEMO DAY</span><br />
-        Students from across the University of Southern California will exhibit their work at Demo Day, a bi-annual collaborative exhibition event, put on by USC's School of Cinematic Arts Interactive Media Division and the Viterbi School of Engineering's Department of Computer Science.<br />
-        <a href="#story3">READ MORE >></a></p>
-      </div>
-        <div class="thirdbox" style="margin-right:0px;">
-        <span style="font-family:headerfont;">4.30.12</span><br />
-        <p style="padding-left:35px;">
-        <span style="color:#ffcc00;">SCA'S IMD REACHES UNCHARTED TERRITORY</span><br />
-        Leading Game Designer Richard Lemarchand to Join IMD<br />	
-        <a href="#story4">READ MORE >></a></p>
-      </div>
+      <?php while( $topnewslist->have_posts() ) : $topnewslist->the_post(); 
+		$new_post_count++;
+		$post_link = '#story' .  $new_post_count;
+		if($new_post_count == 1 ) { ?>
+          <div style="width:260px; float:right; padding-right:70px;">
+            <span style="font-family:headerfont;"><?php echo get_the_date( 'm.d.y' ); ?></span><br />
+            <div style="padding-left:35px;">
+              <span style="color:#ffcc00; text-transform:uppercase;"><?php the_title(); ?></span><br />
+              <?php the_excerpt(); ?>
+              <a href="<?php echo $post_link ?>">READ MORE >></a>
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      <?php } else { ?>
+        <div class="thirdbox" <?php if($new_post_count = 4) : ?> style="margin-right:0px;"<?php else : ''; endif; ?>>
+          <span style="font-family:headerfont;"><?php echo get_the_date( 'm.d.y' ); ?></span><br />
+          <div style="padding-left:35px;">
+            <span style="color:#ffcc00; text-transform:uppercase;"><?php the_title(); ?></span><br />
+            <?php the_excerpt(); ?>	
+            <a href="<?php echo $post_link ?>">READ MORE >></a>
+          </div>
+        </div>
+	  <?php }
+	  endwhile; ?>
       <div style="clear:both;"></div>
       <div style="position:relative; bottom:-20px; z-index:1;">
         <p align="right"><a href="#story5">OLD STORIES>></a></p>
       </div>
     </div>
   </div>
-  <div style="height:37px; width:855px; margin-left:60px; margin-top:-25px; margin-bottom:-25px; background-image:url(images/newsline.png)"></div>
-  <div class="textbox" style="left:25px; width:930px;">
+  <?php $newargs = array( 'post_type' => 'uscgames_news',
+                               'post_status' => 'publish',
+                               'order' => 'ASC',
+                               'orderby' => 'meta_value',
+                               'posts_per_page' => '10' );
+          $allnewslist = new WP_Query($newargs);
+          while( $allnewslist->have_posts() ) : $allnewslist->the_post();
+          	$all_post_count++;
+			$post_link = 'story' .  $all_post_count; ?>
+  <div class="newsline"></div>
+  <div class="textbox" style="left:25px; width:890px;">
     <div class="content">
-      <a name="story1"><span style="font-family:headerfont;">07.05.12</span></a><br />
-      <span style="color:#ffcc00; text-transform:uppercase;">Rose Family Foundation Fellowship Established at SCA</span><br />
-      The Interactive Media Division at the USC School of Cinematic Arts has the backing and attention of many top video game companies and personalities. This July, Activision Blizzard executive George Rose joins their ranks by establishing the Rose Family Foundation Fellowship for Interactive Entertainment.
-      <br /><br />
-      "SCA's Interactive Media Division is without peer, and produces the best and most innovative young talent," said Rose. "By establishing this Fellowship, it is my hope to direct the attention of the best and the brightest minds to not only to game design but to how the games can be used in new and unexpected ways. This area is challenging and exciting and proves that limits to game design and interactivity are truly boundless."
-      <br /><br />
-      George Rose is a veteran executive in the video game industry, spending the past 17 years with Activision Blizzard, the largest and most successful video game publisher in the world. He has served as its former Chief Public Policy Officer and Chief Legal Officer and now as Senior Consultant to the Activision Blizzard CEO. Rose is responsible for defining many of the legal and business conventions established by the video game industry and is considered one of the nation's authorities on the legal and policy issues related to children and video game play. He also held a leading role in Brown vs. EMA, a recent U.S. Supreme Court decision upholding the constitutional right of free speech in the context of video games.
-      <br /><br />
-      The fund is intended to support, encourage and educate new voices at the USC School of Cinematic Arts by providing students with tuition and fee assistance. Over the next five years, funds will be awarded to two students per year who are enrolled in the Interactive Media Division (IMD) and are creating interactive projects within the areas of health, wellness, education or other innovative areas. The students will be known as the Rose Family Foundation Fellows.
-      <br /><br />
-      "The Rose Family's generous gift is precisely the kind of support that allows us to provide an exceptional educational environment for our students," said SCA Dean Elizabeth M. Daley. "Our Interactive Media Division is second to none in the world and the fund will go a long way to encourage deserving students to further their studies in game design and other emerging media."
-      <br /><br />
+      <a name="<?php echo $post_link ?>"><span style="font-family:headerfont;"><?php echo get_the_date( 'm.d.y' ); ?></span></a><br />
+      <span style="color:#ffcc00; text-transform:uppercase;"><?php the_title(); ?></span><br />
+      <?php the_content(); ?>
+      <br />
       <a href="#top">BACK TO TOP</a>
     </div>
   </div>
+  <?php endwhile; ?>
 </div>
 <?php get_footer(); ?>

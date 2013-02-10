@@ -182,6 +182,13 @@ body {
 	width:260px;
 	margin-right:37px;
 }
+.newsline {
+	height:37px;
+	width:auto;
+	background-image:url(images/newsline.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
 #numberoneimage {
 	position:absolute;
 	left:439px;

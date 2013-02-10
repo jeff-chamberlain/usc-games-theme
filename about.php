@@ -34,14 +34,7 @@ get_header();
 					});
 			});
 		</script>
-        <div class="textbox" style="width:625px; left:70px;">
-                    <div style="position:relative; height:auto">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                        <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                    </div>
-                    <div style="position:relative; height:auto;">
-                        <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
+        <div class="textbox" style="width:585px; left:70px;">
                         <div class="content"><span class="header">_about us</span>
                         <br /><br />
                         <p style="padding-right:125px;">Recognized as the #1 game design program in North America by the Princeton Review and GamePro Magazine, USC Games represents an exciting collaboration between the School of Cinematic Arts' Interactive Media Division and the Viterbi School of Engineering's Department of Computer Science. Incorporating elements of design, artistry and engineering, USC Games offers an utterly unique educational experience for students, and serves as the launching pad for them to play significant roles in the game design field. With rigorous, hands-on instruction from master designers, engineers and working professionals in the industry, students have an unprecedented level of opportunity to delve into every aspect of creating games for a global audience.</p>
@@ -50,58 +43,14 @@ get_header();
 <br /><br />
 Many USC Games alumni have forged dynamic careers either in the game design industry, or as part of their own independent start-up companies. Alumni like Sumeet Jakatdar, Jenova Chen, Kellee Santiago, Rob Cheng, and Susanna Ruiz gained valuable training and experience as USC students, enabling them to transition into the professional world.
                     </div>
-                        <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                    </div>
-                    <div style="position:relative; height:auto;">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                        <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
-                    </div>
                 </div>
-                <div class="textbox" style="position:absolute; width:440px; left:70px; z-index:-5;">
-                    <div style="position:relative; height:auto">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                        <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                    </div>
-                    <div style="position:relative; height:auto;">
-                        <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
+                <div class="textbox" style="position:absolute; width:400px; left:70px; z-index:-5;">
                         <div class="content" style="height:420px;"><span class="header"><p align="right" style="color:#FFF;">_success stories</p></span>
-                    </div>
-                        <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                    </div>
-                    <div style="position:relative; height:auto;">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                        <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
-                    </div>
+                    	</div>
                 </div>
-<div class="textbox" style="position:absolute; width:255px; left:40px; top:800px; z-index:-3;">
-                    <div style="position:relative; height:auto">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                        <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                    </div>
-                    <div style="position:relative; height:auto;">
-                        <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
-                        <div class="content" style="height:205px;">
-                    </div>
-                        <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                    </div>
-                    <div style="position:relative; height:auto;">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                        <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
-                    </div>
+				<div class="textbox" style="position:absolute; width:215px; height:260px; left:40px; top:800px; z-index:-3;">
                 </div>
-<div class="textbox" style="width:500px;left:520px;">
-                    <div style="position:relative; height:auto">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_TL.png)"></div>
-                        <div class="vert" style="top:0px; background-image:url(images/border_T.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_TR.png)"></div>
-                    </div>
-                    <div style="position:relative; height:auto;">
-                        <div class="side" style="top:0px; left:0px; background-image:url(images/border_L.png);"></div>
+					<div class="textbox" style="width:460px;left:520px;">
                         <div class="content"><span class="header"><p align="right">_resources</p></span>
                         <br />
                        <b>GAME INNOVATION LAB</b><br />
@@ -173,38 +122,13 @@ Flash Builder/FLEX<br />
 XNA Game Studio<br />
 Arduino
                         </div>
-                        <div class="side" style="top:0px; right:0px; background-image:url(images/border_R.png);"></div> 
-                    </div>
-                    <div style="position:relative; height:auto;">
-                      <div class="corner" style="top:0px; left:0px; background-image:url(images/border_BL.png)"></div>
-                        <div class="vert" style=" position:relative; top:0px; background-image:url(images/border_B.png);"></div>
-                        <div class="corner" style="top:0px; right:0px; background-image:url(images/border_BR.png)"></div>
-                    </div>
                 </div>
-                <div style="background-image:url(images/aboutpage_image1.png); position:absolute; top:140px; left:530px; width:375px; height:282px;"></div>
-        <div style="background-image:url(images/aboutpage_image2.png); position:absolute; top:410px; left:680px; width:284px; height:216px;"></div>
-        <div style="background-image:url(images/aboutpage_image3.png); position:absolute; top:1210px; left:115px; width:406px; height:311px;"></div>
+                <div style="clear:both;"></div>
+                <div style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/images/aboutpage_image1.png); position:absolute; top:140px; left:530px; width:375px; height:282px;"></div>
+        <div style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/images/aboutpage_image2.png); position:absolute; top:410px; left:680px; width:284px; height:216px;"></div>
+        <div style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/images/aboutpage_image3.png); position:absolute; top:1210px; left:115px; width:406px; height:311px;"></div>
         <div id="successstories" class="aboutSlider">
-                            <div id="slider3" class="nivoSlider">
-                                <a href="images/suc_slider1.png" target="_blank"><img src="images/suc_slider1.png" alt=""title="#suc_caption1" /></a>
-                                <a href="images/suc_slider2.png" target="_blank"><img src="images/suc_slider2.png" alt="" title="#suc_caption2" /></a>
-                                <a href="images/suc_slider3.png" target="_blank"><img src="images/suc_slider3.png" alt="" title="#suc_caption3" /></a>
-                                <a href="images/suc_slider4.png" target="_blank"><img src="images/suc_slider4.png" alt="" title="#suc_caption4" /></a>
-                                <a href="images/suc_slider5.png" target="_blank"><img src="images/suc_slider5.png" alt="" title="#suc_caption5" /></a>
-                                <a href="images/suc_slider6.png" target="_blank"><img src="images/suc_slider6.png" alt="" title="#suc_caption6" /></a>
-</div>
-                            <div id="suc_caption1" class="nivo-html-caption"><span style="color:#ffCC00;">Jenova Chen</span> - Chen is the multi-award-winning creator behind the popular games Cloud and fLow, both made while he was a student at the School of Cinematic Arts. fLow is the first student game project to become a commercial console game. He is also, with Kellee Santiago, the co-founder of thatgamecompany and the creative director of Flower and Journey.
-</div>
-                            <div id="suc_caption2" class="nivo-html-caption"><span style="color:#ffCC00;">Kellee Santiago</span> - Co-founder and former president of thatgamecompany with Jenova Chen, Santiago moved from a background in experimental theatre into video game design, producing Cloud with Chen and parlaying its success into the creation of thatgamecompany, a second-party developer for Sony Computer Entertainment. Santiago is a TED Fellow and a backer of The Indie Fund, dedicated to the development of independent games.
-</div>
-                            <div id="suc_caption3" class="nivo-html-caption"><span style="color:#ffCC00;">Paul Bellezza</span> - Bellezza is the co-creator of the award-winning indie game, The Misadventures of P.B. Winterbottom, which was released by 2K Play on Xbox LIVE Arcade for Xbox 360 in 2010. The game, created as an IMD thesis project, garnered several independent awards and nominations from IGN.com, GameSpot, IndieCade and the Independent Games Festival for its unique art style and inventive gameplay mechanics. Bellezza is an associate producer at Riot Games and a co-founder of game company The Odd Gentlemen.
-</div>
-                            <div id="suc_caption4" class="nivo-html-caption"><span style="color:#ffCC00;">Matt Korba</span> - Korba is the president and co-founder of game company The Odd Gentlemen and co-creator of the award-winning indie game, The Misadventures of P.B. Winterbottom, which was released by 2K Play on Xbox LIVE Arcade for Xbox 360 in 2010. The game, created as an IMD thesis project, garnered several independent awards and nominations from IGN.com, GameSpot, IndieCade and the Independent Games Festival for its unique art style and inventive gameplay mechanics.
-</div>
-                            <div id="suc_caption5" class="nivo-html-caption"><span style="color:#ffCC00;">Susana Ruiz</span> - Ruiz developed the multiple-award winning game Darfur is Dying and is a co-founder of the game design collective Take Action Games, which seeks to address critical social issues via innovative gameplay. Their game RePlay: Finding Zoe/ReJouer: Où est Zoé? produced in collaboration with the Metropolitan Action Committee on Violence Against Women and Children won several awards including the Ashoka Changemakers global competition "Why Games Matter: A Prescription for Improving Health and Health Care," and the Adobe MAX Award for Social Responsibility.
-</div>
-                            <div id="suc_caption6" class="nivo-html-caption"><span style="color:#ffCC00;">Asher Vollmer</span> - IMD graduate Vollmer is the creator of the best-selling addictive puzzle/word game, Puzzlejuice, that will "punch your brain in the face," available as a universal app for the iPad and iPhone.  He is also part of the team that created The Misadventures of P.B. Winterbottom.
-</div>
+                             <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('uscgames_success_slider')) : else : ''; endif; ?>
                         </div>
 	  </div>
 <?php get_footer(); ?>

@@ -12,12 +12,14 @@
  
 /* The Nivo Slider styles */
 #newsslideshow {
-	float:left;
+	float:right;
 	position:relative;
 	background-image:url(images/news_sliderbg.png);
+	background-repeat:no-repeat;
 	top:-20px;
 	width:483px;
 	height:358px;
+	padding-right:41px;
 }
 .newsSlider .nivoSlider {
 	position:absolute;
